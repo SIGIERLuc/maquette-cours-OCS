@@ -1,4 +1,4 @@
-header, #details, #team, #about, #citation
+header, #details, #team, #project, #citation
 {
     text-align: center;
 }
@@ -131,29 +131,29 @@ h5
     background-color: white;
 }
 
-.about{
+.project{
     padding:25px 0 70px 0;
 }
-.about > .col-md-6 > h2
+#project
 {
-    text-align: left;
+    margin: 70px 0px 70px 0px ;
 }
-.about > .col-md-6 > p,
-.about > .col-md-6 > p > a
-{
-    text-align: right;
-    color: #000000;
+
+.project-img{
+    width: 160px;
+    height: 160px;
+    margin: 5px 5px 20px 5px
 }
+
+
+
 .right
 {
     vertical-align: middle;
     margin-left:5px;
 }
 
-#about
-{
-    margin: 70px 0px 70px 0px ;
-}
+
 .no-padding
 {
     padding: 0 !important;
