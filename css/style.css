@@ -20,11 +20,15 @@ header
 {
     margin-top:200px;
 }
+.crop-navbar{
+    padding: .5rem 20% 0.5rem 20%!important
+}
 nav
 {
     text-transform: uppercase;
     font-weight: bolder;
     background:#171039;
+    
 }
 
 .logo
