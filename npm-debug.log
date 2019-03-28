@@ -1,0 +1,63 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'G:\\logiciel\\New Folder\\node\\node.exe',
+1 verbose cli   'G:\\logiciel\\New Folder\\node\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'mustache',
+1 verbose cli   '--save' ]
+2 info using npm@3.10.9
+3 info using node@v6.9.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData mustache
+8 silly fetchNamedPackageData mustache
+9 silly mapToRegistry name mustache
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'mustache',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'mustache',
+12 silly mapToRegistry   name: 'mustache',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/mustache
+14 verbose get https://registry.npmjs.org/mustache not expired, no request
+15 silly install normalizeTree
+16 silly loadCurrentTree Finishing
+17 silly loadIdealTree Starting
+18 silly install loadIdealTree
+19 silly cloneCurrentTree Starting
+20 silly install cloneCurrentTreeToIdealTree
+21 silly cloneCurrentTree Finishing
+22 silly loadShrinkwrap Starting
+23 silly install loadShrinkwrap
+24 silly loadShrinkwrap Finishing
+25 silly loadAllDepsIntoIdealTree Starting
+26 silly install loadAllDepsIntoIdealTree
+27 silly rollbackFailedOptional Starting
+28 silly rollbackFailedOptional Finishing
+29 silly runTopLevelLifecycles Finishing
+30 silly install printInstalled
+31 verbose stack Error: Refusing to install mustache as a dependency of itself
+31 verbose stack     at checkSelf (G:\logiciel\New Folder\node\node_modules\npm\lib\install\validate-args.js:53:14)
+31 verbose stack     at Array.<anonymous> (G:\logiciel\New Folder\node\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+31 verbose stack     at LOOP (G:\logiciel\New Folder\node\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+31 verbose stack     at chain (G:\logiciel\New Folder\node\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
+31 verbose stack     at G:\logiciel\New Folder\node\node_modules\npm\lib\install\validate-args.js:16:5
+31 verbose stack     at G:\logiciel\New Folder\node\node_modules\npm\node_modules\slide\lib\async-map.js:52:35
+31 verbose stack     at Array.forEach (native)
+31 verbose stack     at G:\logiciel\New Folder\node\node_modules\npm\node_modules\slide\lib\async-map.js:52:11
+31 verbose stack     at Array.forEach (native)
+31 verbose stack     at asyncMap (G:\logiciel\New Folder\node\node_modules\npm\node_modules\slide\lib\async-map.js:51:8)
+32 verbose cwd C:\Users\Luc SIGIER\Documents\formation\maquette-cours-OCS
+33 error Windows_NT 10.0.17134
+34 error argv "G:\\logiciel\\New Folder\\node\\node.exe" "G:\\logiciel\\New Folder\\node\\node_modules\\npm\\bin\\npm-cli.js" "install" "mustache" "--save"
+35 error node v6.9.2
+36 error npm  v3.10.9
+37 error code ENOSELF
+38 error Refusing to install mustache as a dependency of itself
+39 error If you need help, you may report this error at:
+39 error     <https://github.com/npm/npm/issues>
+40 verbose exit [ 1, true ]
