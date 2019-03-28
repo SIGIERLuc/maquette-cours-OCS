@@ -28,7 +28,3 @@ $('.navbar-nav>li>a').on('click', function () {
     $('.navbar-collapse').collapse('hide');
 });
 
-
-for (var i of Object.keys(allProject)){
-    console.log(allProject[i]);
-} 
