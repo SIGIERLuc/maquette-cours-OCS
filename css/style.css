@@ -1,4 +1,4 @@
-header, #details, #team, #project, #citation {
+header, #details, #project, #project, #citation {
     text-align: center;
 }
 
@@ -101,14 +101,14 @@ h5 {
     margin: auto;
 }
 
-#team {
+#project {
     display: block;
     height: auto;
-    min-height: 780px;
+    /* min-height: 780px; */
     padding: 75px 0 50px 0;
 }
 
-#team, #citation {
+#project{
     background-color: #ccc;
     background-image: url("../img/team-background.jpg");
     background-repeat: repeat-y;
@@ -117,7 +117,7 @@ h5 {
     color: #ffffff;
 }
 
-#team>.container>.row {
+#project>.container>.row {
     margin: 45px 0 45px 0;
 }
 
@@ -135,23 +135,6 @@ h5 {
     background-color: white;
 }
 
-.project {
-    padding: 25px 0 70px 0;
-}
-
-#project {
-    margin: 70px 0px 70px 0px;
-}
-
-.googlemaps {
-    background-image: url("../img/Wired.jpg");
-    background-size: 1140px 300px;
-    height: 300px;
-}
-.text-project{
-    width: 50%;
-    text-align: center;
-}
 
 .project-img {
     width: 160px;
@@ -349,13 +332,11 @@ footer>.container>.row>.col-md-4>img {
 }
 
 /*  */
+
 /* OWL CSS */
-.projectTitle{
-    margin: 10px 0px
-}
-.projectText{
+
+.projectText {
     text-align: center
 }
-.projectButton{
-    margin-top:8%;
-}
+
+.collapse.in { min-height: 50px;border: 1px solid blue; }
