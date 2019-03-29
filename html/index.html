@@ -68,7 +68,7 @@
                         <hr>
                         <p>Vous pourrez découvrir sur ce site tout les projets que j'ai mener a bien pendant ma
                             formation de développeur d'application front-end au
-                            seins d'<a target="_blank"
+                            seins d'<a class="link" target="_blank"
                                 href="https://openclassrooms.com/fr/paths/60-developpeur-dapplication-frontend">OpenClassRoom</a>,
                             ainsi que certain de mes projets personnel.
 
@@ -157,22 +157,22 @@
     <!-- Section 3 A propos -->
 
     <section id="project">
-        <div class="container" id=myGroup>
-            <div class="row project">
+        <div class="container" id="myGroup">
+            <div class="row">
                 <div class="col-md-12">
                     <h2>
                         MES PROJETS
                     </h2>
                     <hr>
+                </div>
+            </div>
+            <div class="projectContainer">
+                <div class="col-md-12">
                     <p>
-                        Voici la liste des projets que j'ai réaliser durant ma formation.<br>
-                        A travers ces sept projets j'ai appris de nouvelle compétence et affiner certaine que je
-                        possedait
-                        déjà.<br>
+                        A travers ces projets j'ai appris de nouvelle compétence et affiner certaine que je
+                        possedait déjà.<br>
                         Certain projet ne sont pas visuel mais un liens vers mon github vous permettra de voir le
                         travail fourni pour ces derniers.
-
-
                     </p>
                 </div>
                 <div class="col-sm-12 projectButtonGroup">
@@ -199,179 +199,215 @@
                     <button data-toggle="collapse" data-target="#collapseP7" aria-controls="collapseP7">
                         TODO List
                     </button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="collapse col-sm-12 projectFrame" id="collapseP1" data-parent="#myGroup">
-                    <h3>Thème Wordpress</h3>
-                    <p class="projectText">
-                        Voici mon premier projet réaliser durant ma formation. Il consistait a prendre en main
-                        un thème Wordpress et à crée un site de A à Z en y intégrant quelque fonctionnalité demander par
-                        le "client".
-                        <br>De plus une documentation devait être fourni afin que le "client" puisse modifier le
-                        contenue du site par lui même.
-                    </p>
-                    <img class="project-img" src="../img/logo-wordpress-e1519319060902.png">
-                    <br>
-                    <button>
-                        Site Web
-                    </button>
-                    <button>
-                        Documentation
-                    </button>
-                    <button>
-                        GitHub
-                    </button>
-                </div>
-                <div class="collapse col-sm-12 projectFrame" id="collapseP2" data-parent="#myGroup">
-                    <h3>Festival de Film</h3>
-                    <p class="projectText">
-                        Mon second projet avais pour but de crée une maquette de site pour un festival de film en plein
-                        air.
-                        <br>De plus je devais rédiger un cahier des charges que je présenterais au "client" durant ma
-                        soutenance.
-                    </p>
-                    <img class="project-img" src="https://snifferwolf.com/film/img/logo-white.png">
-                    <br>
-                    <button>
-                        Site Web
-                    </button>
-                    <button>
-                        Cahier des charges
-                    </button>
-                    <button>
-                        GitHub
-                    </button>
-                </div>
-                <div class="collapse col-sm-12 projectFrame" id="collapseP3" data-parent="#myGroup">
-                    <h3>ExpressFood</h3>
-                    <p class="projectText">
-                        Troisième projet de la formation ici je devais concevoir la solution technique d'une application
-                        de commande de repas en ligne avec certaine contrainte du au besoin "client".
-                        <br>Pour cela je devais crée plusieurs schémas UML ainsi qu'une base de données basé sur un
-                        schéma SQL que j'avais crée.
-                    </p>
-                    <img class="project-img" src="../img/mysql-logo.png">
-                    <br>
-                    <button>
-                        Diagrammes UML
-                    </button>
-                    <button>
-                        Schéma Base de données
-                    </button>
-                    <button>
-                        Base de données
-                    </button>
-                    <button>
-                        Git Hub
-                    </button>
-                </div>
-                <div class="collapse col-sm-12 projectFrame" id="collapseP4" data-parent="#myGroup">
-                    <h3>Générateur de citation</h3>
-                    <p class="projectText">
-                        Dans ce quatrième projet je devais concevoir deux version d'un générateur de citation en
-                        JavaScript.
-                        <br>La première devais simplement générer une citation en piochant dans un tableaux de manière
-                        aléatoire sans se soucier que le résultat sois intéligible mais la phrase devait être cohérente
-                        (pas de point d'exclamation au milieu d'une phrase).
-                        <br>La deuxième version elle devait permettre de configurer le générateur en donnant le choix du
-                        nombre de citation générer et proposer deux tableaux où piocher les "morceaux" de citation.
-                    </p>
-                    <img class="project-img" src="../img/jsthumb.png">
-                    <br>
-                    <button>
-                        Version 1
-                    </button>
-                    <button>
-                        Version 2
-                    </button>
-                    <button>
-                        Git Hub
+                    <button data-toggle="collapse" data-target="#perso1" aria-controls="perso1">
+                        Maquette Tajam
                     </button>
 
                 </div>
-                <div class="collapse col-sm-12 projectFrame" id="collapseP5" data-parent="#myGroup">
-                    <h3>Jeu de plateau</h3>
-                    <p class="projectText">
-                        Le cinquième projet me demandais de pousser un peux plus l'utilisation du JavaScript et
-                        l'intégration de jQuery afin cette fois ci de crée un jeu de plateau avec des règles bien
-                        précise.
-                        <br>Le plateau de jeu étant composer d'une grille où était positionner de manière aléatoire,
-                        deux joueurs, de une à quatre armes (en piochant dans un pool de 4 armes), des murs
-                        infranchissable par les joueurs.
-                        <br>Chaque joueur peux a sont tour se déplacer de une à trois cases il peux ramasser une arme en
-                        passant ou en s'arretant dessus. Si il s'arrette passe par une case adjacente de l'autre joueur
-                        alors il lance un "combat à mort".
-                        <br>Le combat se joue en tour par tour chaque joueur a le choix d'atttaquer ou de se défendre
-                        (ce qui réduit les prochain dommage reçu de 50%) et ce jusqu'a qu'un joueur atteigne 0 point de
-                        vie et perde le combat.
-                    </p>
-                    <img class="project-img" src="../img/Smallworld_large03.jpg">
-                    <br>
-                    <button>
-                        L'application
-                    </button>
-                    <button>
-                        Git Hub
-                    </button>
-
-                </div>
-                <div class="collapse col-sm-12 projectFrame" id="collapseP6" data-parent="#myGroup">
-                    <h3>Site d'avis de restaurant</h3>
-                    <p class="projectText">
-                        Ce sixième projet ma demander de crée un site de review de restaurant en ligne, l'utilisation de
-                        L'API googleMaps et googlePlace était au coeur du projet.
-                        <br> De plus j'ai du composer avec une hypotétique User Experience. Je n'avais aucune contrainte
-                        concernant le design de l'application je devais juste afficher les restaurant dans une zone
-                        autour de la position de l'utilisateur et permettre a ce dernier de trier les restaurants par
-                        nombre d'étoiles.
-                        Aussi l'utilisateur devait pouvoir lire les commentaires du restaurant et pouvoir lui même en
-                        ajouter un (non sauvegarder).
-                    </p>
-                    <img class="project-img" src="../img/google-maps-1797882_960_720.png">
-                    <br>
-                    <button>
-                        L'application
-                    </button>
-                    <button>
-                        Git Hub
-                    </button>
-
-                </div>
-                <div class="collapse col-sm-12 projectFrame" id="collapseP7" data-parent="#myGroup">
-                    <h3>TODO List</h3>
-                    <p class="bigText">
-                        !!! Le code de ce projet n'as pas été écrit par moi !!!
-                    </p>
-                    <p class="projectText">
-                        Sur ce septième et dernier projet je devais récuperer un code déjà existant afin de premièrement
-                        corriger les bugs existant et deuxièmement l'optimiser et ajouter des test unitaire à ceux déjà
-                        en place.
-                        <br>De plus j'ai du rediger une documentation technique complète et un audit de performance en
-                        me basant sur un site "concurrent".
-                    </p>
-                    <img class="project-img" src="../img/cahier.png">
-                    <br>
-                    <button>
-                        Application
-                    </button>
-                    <button>
-                        Application concurrente
-                    </button>
-                    <button>
-                        Documentation technique + Audit de performance
-                    </button>
-                    <button>
-                        Git Hub
-                    </button>
-                    <button>
-                        Git Hub du créateur
-                    </button>
-                </div>
+                <div class="row">
+                        <div class="collapse show col-sm-12 projectFrame" id="collapseP1" data-parent="#myGroup">
+                            <h3>Thème Wordpress</h3>
+                            <p class="projectText">
+                                Voici mon premier projet réaliser durant ma formation. Il consistait a prendre en main
+                                un thème Wordpress et à crée un site de A à Z en y intégrant quelque fonctionnalité demander
+                                par
+                                le "client".
+                                <br>De plus une documentation devait être fourni afin que le "client" puisse modifier le
+                                contenue du site par lui même.
+                            </p>
+                            <img class="project-img" src="../img/logo-wordpress-e1519319060902.png">
+                            <br>
+                            <a class="projectButton" target="_blank" href="http://locationchalet.themecloud.website/">
+                                Site Web
+                            </a>
+                            <a class="projectButton" target="_blank" href="http://www.google.com">
+                                Documentation
+                            </a>
+                            <a class="projectButton" target="_blank" href="https://github.com/SIGIERLuc/OCS-P2">
+                                GitHub
+                            </a>
+                        </div>
+                        <div class="collapse col-sm-12 projectFrame" id="collapseP2" data-parent="#myGroup">
+                            <h3>Festival de Film</h3>
+                            <p class="projectText">
+                                Mon second projet avais pour but de crée une maquette de site pour un festival de film en
+                                plein
+                                air.
+                                <br>De plus je devais rédiger un cahier des charges que je présenterais au "client" durant
+                                ma
+                                soutenance.
+                            </p>
+                            <img class="project-img" src="https://snifferwolf.com/film/img/logo-white.png">
+                            <br>
+                            <a class="projectButton" target="_blank" href="https://snifferwolf.com/film/html/index.html">
+                                Site Web
+                            </a>
+                            <a class="projectButton" target="_blank" href="http://www.google.com">
+                                Cahier des charges
+                            </a>
+                            <a class="projectButton" target="_blank" href="https://github.com/SIGIERLuc/OCS-P3">
+                                GitHub
+                            </a>
+                        </div>
+                        <div class="collapse col-sm-12 projectFrame" id="collapseP3" data-parent="#myGroup">
+                            <h3>ExpressFood</h3>
+                            <p class="projectText">
+                                Troisième projet de la formation ici je devais concevoir la solution technique d'une
+                                application
+                                de commande de repas en ligne avec certaine contrainte du au besoin "client".
+                                <br>Pour cela je devais crée plusieurs schémas UML ainsi qu'une base de données basé sur un
+                                schéma SQL que j'avais crée.
+                            </p>
+                            <img class="project-img" src="../img/mysql-logo.png">
+                            <br>
+                            <a class="projectButton" target="_blank" href="http://www.google.com">
+                                Diagrammes UML
+                            </a>
+                            <a class="projectButton" target="_blank" href="http://www.google.com">
+                                Schéma Base de données
+                            </a>
+                            <a class="projectButton" target="_blank" href="http://www.google.com">
+                                Base de données
+                            </a>
+                            <a class="projectButton" target="_blank" href="https://github.com/SIGIERLuc/OCS-P4">
+                                Git Hub
+                            </a>
+                        </div>
+                        <div class="collapse col-sm-12 projectFrame" id="collapseP4" data-parent="#myGroup">
+                            <h3>Générateur de citation</h3>
+                            <p class="projectText">
+                                Dans ce quatrième projet je devais concevoir deux version d'un générateur de citation en
+                                JavaScript.
+                                <br>La première devais simplement générer une citation en piochant dans un tableaux de
+                                manière
+                                aléatoire sans se soucier que le résultat sois intéligible mais la phrase devait être
+                                cohérente
+                                (pas de point d'exclamation au milieu d'une phrase).
+                                <br>La deuxième version elle devait permettre de configurer le générateur en donnant le
+                                choix du
+                                nombre de citation générer et proposer deux tableaux où piocher les "morceaux" de citation.
+                            </p>
+                            <img class="project-img" src="../img/jsthumb.png">
+                            <br>
+                            <a class="projectButton" target="_blank" href="https://snifferwolf.com/JS-CITATION/JS-Citation-console/html/index.html">
+                                Version 1
+                            </a>
+                            <a class="projectButton" target="_blank" href="https://snifferwolf.com/JS-CITATION/JS-Citation-html/html/index.html">
+                                Version 2
+                            </a>
+                            <a class="projectButton" target="_blank" href="https://github.com/SIGIERLuc/OCS-P5">
+                                Git Hub
+                            </a>
+                    
+                        </div>
+                        <div class="collapse col-sm-12 projectFrame" id="collapseP5" data-parent="#myGroup">
+                            <h3>Jeu de plateau</h3>
+                            <p class="projectText">
+                                Le cinquième projet me demandais de pousser un peux plus l'utilisation du JavaScript et
+                                l'intégration de jQuery afin cette fois ci de crée un jeu de plateau avec des règles bien
+                                précise.
+                                <br>Le plateau de jeu étant composer d'une grille où était positionner de manière aléatoire,
+                                deux joueurs, de une à quatre armes (en piochant dans un pool de 4 armes), des murs
+                                infranchissable par les joueurs.
+                                <br>Chaque joueur peux a sont tour se déplacer de une à trois cases il peux ramasser une
+                                arme en
+                                passant ou en s'arretant dessus. Si il s'arrette passe par une case adjacente de l'autre
+                                joueur
+                                alors il lance un "combat à mort".
+                                <br>Le combat se joue en tour par tour chaque joueur a le choix d'atttaquer ou de se
+                                défendre
+                                (ce qui réduit les prochain dommage reçu de 50%) et ce jusqu'a qu'un joueur atteigne 0 point
+                                de
+                                vie et perde le combat.
+                            </p>
+                            <img class="project-img" src="../img/Smallworld_large03.jpg">
+                            <br>
+                            <a class="projectButton" target="_blank" href="https://snifferwolf.com/p6/etape-3/index.html">
+                                L'application
+                            </a>
+                            <a class="projectButton" target="_blank" href="https://github.com/SIGIERLuc/OCS-P6">
+                                Git Hub
+                            </a>
+                    
+                        </div>
+                        <div class="collapse col-sm-12 projectFrame" id="collapseP6" data-parent="#myGroup">
+                            <h3>Site d'avis de restaurant</h3>
+                            <p class="projectText">
+                                Ce sixième projet ma demander de crée un site de review de restaurant en ligne,
+                                l'utilisation de
+                                L'API googleMaps et googlePlace était au coeur du projet.
+                                <br> De plus j'ai du composer avec une hypotétique User Experience. Je n'avais aucune
+                                contrainte
+                                concernant le design de l'application je devais juste afficher les restaurant dans une zone
+                                autour de la position de l'utilisateur et permettre a ce dernier de trier les restaurants
+                                par
+                                nombre d'étoiles.
+                                Aussi l'utilisateur devait pouvoir lire les commentaires du restaurant et pouvoir lui même
+                                en
+                                ajouter un (non sauvegarder).
+                            </p>
+                            <img class="project-img" src="../img/google-maps-1797882_960_720.png">
+                            <br>
+                            <a class="projectButton" target="_blank" href="https://snifferwolf.com/p7/html/googleAPI-3.html">
+                                L'application
+                            </a>
+                            <a class="projectButton" target="_blank" href="https://github.com/SIGIERLuc/OCS-P7">
+                                Git Hub
+                            </a>
+                    
+                        </div>
+                        <div class="collapse col-sm-12 projectFrame" id="collapseP7" data-parent="#myGroup">
+                            <h3>TODO List</h3>
+                            <p class="bigText">
+                                !!! Le code de ce projet n'as pas été écrit par moi !!!
+                            </p>
+                            <p class="projectText">
+                                Sur ce septième et dernier projet je devais récuperer un code déjà existant afin de
+                                premièrement
+                                corriger les bugs existant et deuxièmement l'optimiser et ajouter des test unitaire à ceux
+                                déjà
+                                en place.
+                                <br>De plus j'ai du rediger une documentation technique complète et un audit de performance
+                                en
+                                me basant sur un site "concurrent".
+                            </p>
+                            <img class="project-img" src="../img/cahier.png">
+                            <br>
+                            <a class="projectButton" target="_blank" href="https://snifferwolf.com/p8/todo-list-project/todo-list-app/index.html">
+                                Application
+                            </a>
+                            <a class="projectButton" target="_blank" href="http://todolistme.net/">
+                                Application "concurrente"
+                            </a>
+                            <a class="projectButton" target="_blank" href="http://www.google.com">
+                                Documentation technique + Audit de performance
+                            </a>
+                            <a class="projectButton" target="_blank" href="https://github.com/SIGIERLuc/OCS-P8">
+                                Git Hub
+                            </a>
+                            <a class="projectButton" target="_blank" href="http://www.google.com">
+                                Git Hub du créateur
+                            </a>
+                    
+                        </div>
+                        <div class="collapse col-sm-12 projectFrame" id="perso1" data-parent="#myGroup">
+                            <h3>Maquette Tajem</h3>
+                            <p class="projectText">
+                                Voici un petit projet qui avais pour but de m'entrainer de réaliser mes premiers site en
+                                partant de PSD, cette maquette ma servie pour réaliser mon portfolio.
+                            </p>
+                            <img class="project-img" src="../img/tajam-logo.png">
+                            <br>
+                            <a class="projectButton" target="_blank" href="https://snifferwolf.com/maquette-cours/html/index.html">
+                                Maquette
+                            </a>
+                            <a class="projectButton" target="_blank" href="http://www.google.com">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
             </div>
         </div>
-
-
     </section>
 
     <!-- Section 4 Contact  -->

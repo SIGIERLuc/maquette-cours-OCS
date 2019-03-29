@@ -30,7 +30,7 @@ nav {
     background: #171039;
 }
 
-a, a:hover {
+.link, .link:hover {
     color: #00e0d0!important;
 }
 
@@ -43,7 +43,7 @@ a, a:hover {
     height: 90px;
 }
 
-.col-md-12>hr {
+.col-md-12 > hr,.container > hr {
     border-top: 1px solid #00e0d0!important;
     max-width: 50px;
 }
@@ -117,9 +117,9 @@ h5 {
     color: #ffffff;
 }
 
-#project>.container>.row {
+/* #project>.container>.row {
     margin: 45px 0 45px 0;
-}
+} */
 
 .bord {
     border: 1px solid gray;
@@ -336,7 +336,7 @@ footer>.container>.row>.col-md-4>img {
     margin:5px;
 }
 .projectButtonGroup > button{
-    margin:0px 5px;
+    margin:5px 5px;
 }
 /* Modifier la classe CSS sans limite de taille et retravailler les images sur toshop */
 .project-img {
@@ -350,4 +350,29 @@ footer>.container>.row>.col-md-4>img {
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: bolder;
+}
+
+.projectButton {
+    margin: 10px;
+    width: auto;
+    height: auto;
+    padding: 14px 32px 14px 32px;
+    border: 1px solid #00e0d0;
+    border-radius: 4%!important;
+    background-color: transparent;
+    background-image: none;
+    color: #00e0d0;
+    font-weight: bolder;
+    text-transform: uppercase!important;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+
+  .projectButton:hover {
+    background-color: #00e0d0;
+    color: #ffffff;
+    text-decoration: none;
 }
