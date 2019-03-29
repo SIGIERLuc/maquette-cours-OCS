@@ -136,11 +136,7 @@ h5 {
 }
 
 
-.project-img {
-    width: 160px;
-    height: 160px;
-    margin: 5px 5px 20px 5px
-}
+
 
 .right {
     vertical-align: middle;
@@ -310,9 +306,6 @@ footer>.container>.row>.col-md-4>img {
     margin-bottom: 20px;
 }
 
-.wip {
-    z-index: 3;
-}
 
 #gris {
     position: absolute;
@@ -331,12 +324,30 @@ footer>.container>.row>.col-md-4>img {
     /* Konqueror */
 }
 
-/*  */
-
-/* OWL CSS */
 
 .projectText {
-    text-align: center
+    text-align: center;
+    padding:0% 10% 0% 10%;
+}
+.projectButtonGroup{
+    margin:10px 5px;
+}
+.projectFrame > button{
+    margin:5px;
+}
+.projectButtonGroup > button{
+    margin:0px 5px;
+}
+/* Modifier la classe CSS sans limite de taille et retravailler les images sur toshop */
+.project-img {
+    max-width: 160px;
+    max-height: 160px;
+    min-width: 140px;
+    margin: 5px 5px 20px 5px
 }
 
-.collapse.in { min-height: 50px;border: 1px solid blue; }
+.bigText{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bolder;
+}
