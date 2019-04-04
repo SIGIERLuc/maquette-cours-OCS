@@ -34,16 +34,12 @@ nav {
     color: #00e0d0!important;
 }
 
-#description>.container>.row>.col-md-12>p {
-    font-size: 1.5rem;
-}
-
 .logo {
     width: 115px;
     height: 90px;
 }
 
-.col-md-12 > hr,.container > hr {
+.col-md-12>hr, .container>hr {
     border-top: 1px solid #00e0d0!important;
     max-width: 50px;
 }
@@ -104,11 +100,10 @@ h5 {
 #project {
     display: block;
     height: auto;
-    
     padding: 75px 0 50px 0;
 }
 
-#project{
+#project {
     background-color: #ccc;
     background-image: url("../img/team-background.jpg");
     background-repeat: repeat-y;
@@ -134,9 +129,6 @@ h5 {
     height: 230px;
     background-color: white;
 }
-
-
-
 
 .right {
     vertical-align: middle;
@@ -188,7 +180,7 @@ input, textarea {
     padding: 18px;
 }
 
-button,.projectButton {
+button, .projectButton {
     margin: 10px;
     width: auto;
     height: auto;
@@ -208,7 +200,7 @@ button,.projectButton {
     display: inline-block;
 }
 
-button:hover,.projectButton:hover  {
+button:hover, .projectButton:hover {
     background-color: #00e0d0;
     color: #ffffff;
     text-decoration: none;
@@ -308,7 +300,6 @@ footer>.container>.row>.col-md-4>img {
     margin-bottom: 20px;
 }
 
-
 #gris {
     position: absolute;
     top: 0;
@@ -326,29 +317,60 @@ footer>.container>.row>.col-md-4>img {
     /* Konqueror */
 }
 
-
 .projectText {
     text-align: center;
-    padding:0% 10% 0% 10%;
+    padding: 0% 10% 0% 10%;
 }
-.projectButtonGroup{
-    margin:10px 5px;
+
+.projectButtonGroup {
+    margin: 10px 5px;
 }
-.projectFrame > button{
-    margin:5px;
+
+.projectFrame>button {
+    margin: 5px;
 }
-.projectButtonGroup > button{
-    margin:5px 5px;
+
+.projectButtonGroup>button {
+    margin: 5px 5px;
 }
+
 /* Modifier la classe CSS sans limite de taille et retravailler les images sur toshop */
+
 .project-img {
     max-height: 160px;
     min-width: 140px;
     margin: 5px 5px 40px 5px
 }
 
-.bigText{
+.bigText {
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: bolder;
 }
+.introText{
+    font-size: 1.7rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+@media (max-width: 1000px) {
+    p {
+        font-size: 1.8rem;
+    }
+    .projectText {
+        padding: 0%;
+    }
+    .introText{
+        font-size: 2.2rem;
+    }
+    
+}
+.fa-star{
+    color: #171039;
+}
+.checked {
+    color: #00e0d0;
+  }
+
+  /* #171039 */
