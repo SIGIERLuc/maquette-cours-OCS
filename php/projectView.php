@@ -26,23 +26,24 @@ if ($project_results = request($connect, $sql)) {
     while ($project = mysqli_fetch_array($project_results)) {
         $title = $project["project_name"];
         $content = $project["project_description"];
-        $img = "<img src='" . $project["project_img"] . "'><br>";
+        $img = $project["project_img"];
         $request_to_displayproject = "SELECT * FROM `display_project` WHERE `project_id` = " . $project["ID"];
-        $button_html = "";
+        $button_html = [];
         if ($display_results = request($connect, $request_to_displayproject)) {
             while ($display_project = mysqli_fetch_array($display_results)) {
                 $request_to_button = "SELECT * FROM `button` WHERE `ID` = " . $display_project["button_id"];
-                
+
                 if ($button_results = request($connect, $request_to_button)) {
                     while ($button = mysqli_fetch_array($button_results)) {
-                        $button_html = $button_html + "<a href='" . $button["button_link"] . "'>" . $button["button_text"] . "</a><br>";
+                        array_push($button_html, "<a class='projectButton' target='_blank' href='" . $button["button_link"] . "'>" . $button["button_text"] . "</a><br>");
                     }
                 }
             }
         }
+        require('template-project.php');
     }
 }
 mysqli_close($connect);
 ?>
 
-<?php require('template-project.php'); ?>
+

@@ -7,5 +7,10 @@
     </p>
     <img class="project-img" src="<?= $img ?>">
     <br>
-    <?= $button_html ?>
+    <?php
+        foreach($button_html as $key => $value)
+        {
+          echo $value;
+        }
+    ?>
 </div>
