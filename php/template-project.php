@@ -1,16 +1,18 @@
-<div class="collapse show col-sm-12 projectFrame" id="collapseP1" data-parent="#myGroup">
+<div class="collapse show col-sm-12 projectFrame" id=<?= $project_results["ID"] ?> data-parent="#myGroup">
     <h2>
-        <?= $title ?>
+        <?= $project_results["project_name"] ?>
     </h2>
     <p class="projectText">
-        <?= $content ?>
+        <?= $project_results["project_description"] ?>
     </p>
-    <img class="project-img" src="<?= $img ?>">
     <br>
+
+
     <?php
-        foreach($button_html as $key => $value)
-        {
-          echo $value;
-        }
+
+    foreach ($button_array as $key => $button) {
+        echo "<a class='projectButton' target='_blank' href='" . $button["button_link"] . "'>" . $button["button_text"] . "</a><br>";
+    }
+
     ?>
 </div>

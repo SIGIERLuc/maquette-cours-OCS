@@ -1,40 +1,49 @@
-
 <?php
-function request($database, $sql_request)
-{
-    $request = mysqli_query($database, $sql_request) or die("Erreur SQL ! <br/>" . $sql_request . "<br/>");
-    return $request;
+try {
+    $connect = mysqli_connect('db5000039469.hosting-data.io', 'dbu82893', '5Qq7wpvefufu7FxHnUg9', 'dbs34444');
+} catch (Exception $e) {
+    die("<script>console.log(" . $e->getMessage() . ");</script>");
 }
-function getProject($projectId)
+
+
+function get_project_id($connect)
 {
-    $connect = mysqli_connect("db5000039469.hosting-data.io", "dbs34444", "dbu82893", "5Qq7wpvefufu7FxHnUg9");
+    $sql = "SELECT ID FROM `project`";
 
-    if (mysqli_connect_errno()) {
-        die('<p>La connexion au serveur MySQL a échoué: ' . mysqli_connect_error() . '</p>');
-    } else {
-        echo '<p>Connexion au serveur MySQL établie avec succès.</p >';
+    $req = mysqli_query($connect, $sql) or die("ça marche pas connard");
+    if ($all_project_id = $req) {
+        return $all_project_id;
     }
-    $sql = "SELECT * FROM `project` WHERE ID = " . $projectId;
-
-    $project = request($connect, $sql);
-
-    return $project;
-}   
-
-function getButton($projectId){ 
-    $connect = mysqli_connect("db5000039469.hosting-data.io", "dbs34444", "dbu82893", "5Qq7wpvefufu7FxHnUg9");
-
-    if (mysqli_connect_errno()){
-        die("<p>La connexion au serveur MySql a échoué" .  mysqli_connect_error() . "</p>");
-    }
-    else{
-        echo "<p> Connexion au serveur MySQL établie avec succès.</p>";
-    }
-    $button_sql = "SELECT * FROM `button` WHERE ID = ". $button_id;
-    $match_sql = "SELECT button_id FROM `display_project` WHERE project_id = " . $projectId;
-
-    $button_id = request($connect, $match_sql);
-
-    $matching_button = request($connect, $button_sql);
 }
-?>
+
+function get_project($projectID, $connect)
+{
+    $sql = "SELECT * FROM `project` WHERE ID = " . $projectID;
+    $req_project = mysqli_query($connect, $sql) or die("ça marche pas connard");
+
+    if ($project_results = mysqli_fetch_array($req_project)) {
+        /* echo $projectID; */
+        return $project_results;
+    }
+}
+
+function get_button($projectID, $connect)
+{
+    $sql = "SELECT `button_id` FROM `display_project` WHERE `project_id` = " . $projectID;
+    $req_display_project = mysqli_query($connect, $sql) or die("ça marche pas connard");
+
+    if ($display_results = $req_display_project) {
+        $button_array = [];
+        while ($row = mysqli_fetch_row($display_results)) {
+            foreach ($row as $key => $value) {
+                $sql = "SELECT * FROM `button` WHERE `ID` = " . $value;
+                $req_button = mysqli_query($connect, $sql) or die("ça marche pas connard");
+
+                if ($button_results = mysqli_fetch_array($req_button)) {
+                    array_push($button_array, $button_results);
+                }
+            }
+        }
+        return $button_array;
+    }
+}
