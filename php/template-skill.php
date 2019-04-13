@@ -9,9 +9,9 @@
         <p>Pouet</p>
     <?php
 }
-for ($i; $i < 5 ; $i++) {
+for ($i; $i < 5; $i++) {
     ?>
-    <p>Prout</p>
+        <p>Prout</p>
     <?php
 }
 ?>
