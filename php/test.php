@@ -177,8 +177,8 @@ $array = get_project_id($connect);
                     <h4>
                         Mes coordonnées
                     </h4>
-                    <img src="./img/footer/phone.png">
-                    <p>lucsigier@gmail.com</p>
+                    <img class="floating" src="./img/footer/phone.png">
+                    <p class="floating-adjust">lucsigier@gmail.com</p>
 
                 </div>
                 <div class="col-md-4">
