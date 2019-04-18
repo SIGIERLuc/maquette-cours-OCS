@@ -262,7 +262,8 @@ section {
 footer>.container>.row>.col-md-4 {
     margin-top: 90px;
 }
-footer>.container>.row>.col-md-4>p {
+
+footer>.container>.row>.col-md-4>img, footer>.container>.row>.col-md-4>p {
     margin-bottom: 25px;
 }
 
@@ -279,7 +280,7 @@ footer>.container>.row>.col-md-4>nav>ul>li>a {
     margin-top: 50px;
 }
 
-.logo {
+footer>.container>.row>.col-md-4>img {
     margin-right: 8px;
 }
 
