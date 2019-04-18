@@ -165,30 +165,25 @@ $array = get_project_id($connect);
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <img class="logo" src="./img/logo-sniffer-test.png">
+
                     <p>
-                    <u>Développeur</u> : SIGIER Luc<br>
+                        <u>Développeur</u> : SIGIER Luc<br>
                         <u>Logo-Designer </u>: SIGIER Sarah<br>
                         <u>Relectrice</u> : SIGIER Clara<br>
                         <u>Design</u> : Tajam
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <h4>
-                        Mes coordonnées
-                    </h4>
-                    <img src="./img/footer/phone.png">
-                    <p>lucsigier@gmail.com</p>
-
+                    
                 </div>
                 <div class="col-md-4">
                     <h4>
                         Mes réseaux
                     </h4>
-                    <img src="./img/footer/facebook.png">
-                    <img src="./img/footer/twitter.png">
-                    <img src="./img/footer/insta.png">
-                    <img src="./img/footer/insta.png">
+                    <a href="https://www.facebook.com/luc.sigier" target="_blank"><img src="./img/footer/facebook.png"></a>
+                    <a href="https://twitter.com/LucSigier" target="_blank"><img src="./img/footer/twitter.png"></a>
+                    <a href="https://www.linkedin.com/in/luc-sigier-244b72148/" target="_blank"><img src="./img/footer/linkedin.png"></a>
+                    <a href="mailto:lucsigier@gmail.com" target="_blank"><img src="./img/footer/gmail.png"></a>
                 </div>
             </div>
         </div>
