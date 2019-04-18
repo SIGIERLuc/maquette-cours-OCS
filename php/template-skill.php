@@ -1,4 +1,4 @@
-<div class="col-6 col-md-4 expertise">
+<div class="col-md-4 expertise">
     <img src="<?= $value["skill_image"] ?>">
     <h5>
         <?= $value["skill_name"] ?>
@@ -6,12 +6,12 @@
     <?php
     for ($i = 0; $i < $value["skill_level"]; $i++) {
         ?>
-        <span class="fa fa-star checked"></span>
+        <p>Pouet</p>
     <?php
 }
 for ($i; $i < 5; $i++) {
     ?>
-        <span class="fa fa-star"></span>
+        <p>Prout</p>
     <?php
 }
 ?>

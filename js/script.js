@@ -19,15 +19,12 @@ $(function () {
     /**
     * Smooth scrolling to the top of page
     **/
-    $("#description").click(function () {
-        $("html, body").animate({ scrollTop: 0 }, 1500);
+    $("#description").click(function () { 
+        $("html, body").animate({ scrollTop: 0 }, 1500); 
     })
 
 });
 $('.navbar-nav>li>a').on('click', function () {
     $('.navbar-collapse').collapse('hide');
 });
-
-$("#collapsedProject div:first-child").addClass("show");
-
 
